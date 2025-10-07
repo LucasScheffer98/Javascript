@@ -1,11 +1,11 @@
 const fs = require('fs');
 
-fs.readFile('example.txt', 'utf8', (erro, conteudo_do_arquivo) => {
+fs.readFile('example.txt', 'utf8', (erro, data) => {
     if (erro) {
-        console.error('Erro ao ler o arquivo:', erro);
+        console.error('Erro ao ler arquivo', erro);
         return;
     }
-    console.log('Conteúdo do arquivo:', conteudo_do_arquivo);
+    console.log('Conteúdo do arquivo', data);
 });
 
-console.log('essa mensagem aparace primniro.');
+console.log('Esta mensagem aparece primeiro.')
