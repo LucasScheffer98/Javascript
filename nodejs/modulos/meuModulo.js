@@ -1,6 +1,8 @@
 function saudacao(nome) {
-    return `Oi Pessoa de nome/apelido/não sei oque voĉe botou "${nome}"! Bem-vindo ao Node.js! Hihi!`;
+    return `Olá, ${nome}! Bem-vindo ao Node.js!`;
 }
 
 // Exportando a função para que possa ser usada em outros arquivos
-module.exports = saudacao;
+module.exports = {
+    saudacao
+};
