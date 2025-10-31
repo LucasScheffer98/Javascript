@@ -1,7 +1,7 @@
 module.exports = {
 
-    cadastrar:(id, descricao, quantidade, preco) => {
+    cadastrar: (codigo, descricao, nome, quantidade, valor) => {
 
-        return `Produto ${descricao} com ID: ${id} - Quantidade: ${quantidade} - Valor Unitario: R$${preco} foi cadastrado com sucesso!`;
+        return `O produto ${nome} de codigo ${codigo} com quantidade ${quantidade} e valor ${valor} foi cadastrado com sucesso!`;
     }
 };

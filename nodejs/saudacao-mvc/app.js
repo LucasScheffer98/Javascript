@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const port = 3000;
 
 // Middleware para arquivos estáticos
 app.use(express.static('public'));
@@ -18,5 +19,7 @@ app.use('/usuarios', usuariosRoutes);
 const produtosRoutes = require('./routes/produtos');
 app.use('/produtos', produtosRoutes);
 
-// Exporta o app para que o bin/www possa iniciar o servidor
-module.exports = app;
+// Servidor
+app.listen(port, () => {
+  console.log(`Servidor rodando em http://localhost:${port}`);
+});
